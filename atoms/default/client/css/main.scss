@@ -29,7 +29,7 @@ $mq-breakpoints: (
 $backgroundColor: #FFBB50;
 
 section#charity-appeal-web-only {
-  width:100%;
+    width:100%;
     position: relative;
     padding: 0 !important;
     overflow: hidden;
@@ -303,5 +303,65 @@ section#charity-appeal-web-only {
         mix-blend-mode: darken;
         visibility: hidden;
         opacity:0;
+    }
+}
+
+.charity-appeal-tree-2019 {
+    .android &,
+    .ios & {
+        overflow:visible;
+        margin:0;
+        padding:0;
+        &__headline {
+            margin-top:0;
+            margin-bottom:0;
+            padding-top:4px;
+        }
+        &__subheadline {
+            margin-top:4px;
+            width:65%;
+            font-size:15px;
+        }
+        &__tree {
+            right: 8px;
+            height: 160px;
+            top: 48px;
+        }
+        &__component-button {
+            margin-top:10px;
+            span {
+                font-weight:600;
+            }
+        }
+        &__roundel{
+            top:12px;
+            right:12px;
+            width:38px;
+        }
+        @include mq(mobileMedium){
+            &__subheadline {
+                width:60%;
+                font-size:17px;
+            }
+        }
+        @include mq(mobileLandscape){
+            &__tree {
+                right: 28px;
+                height: 200px;
+                top: 8px;            
+            }
+            &__roundel{
+                width:42px;
+                right:20px;
+            }
+            &__component-button {
+                margin-top:22px;
+            }
+        }
+        @include mq(desktop){
+            &__gu-obs-logo{
+                visibility: hidden;
+            }
+        }
     }
 }

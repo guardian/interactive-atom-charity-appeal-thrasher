@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.6.4",
+    "@babel/core": "^7.7.5",
     "@babel/plugin-proposal-class-properties": "^7.7.0",
     "@babel/preset-env": "^7.6.3",
-    "@babel/register": "^7.6.2",
+    "@babel/register": "^7.7.4",
     "@rollup/plugin-alias": "^2.2.0",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.7",
