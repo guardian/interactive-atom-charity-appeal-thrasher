@@ -306,6 +306,10 @@ section#charity-appeal-web-only {
     }
 }
 
+.interactive-atom {
+    margin:0;
+}
+
 .charity-appeal-tree-2019 {
     .android &,
     .ios & {
@@ -325,17 +329,17 @@ section#charity-appeal-web-only {
         &__tree {
             right: 8px;
             height: 160px;
-            top: 48px;
+            top: 40px;
         }
         &__component-button {
-            margin-top:10px;
+            margin-top:7px;
             span {
                 font-weight:600;
             }
         }
         &__roundel{
-            top:12px;
-            right:12px;
+            top:4px;
+            right:8px;
             width:38px;
         }
         @include mq(mobileMedium){
@@ -348,7 +352,7 @@ section#charity-appeal-web-only {
             &__tree {
                 right: 28px;
                 height: 200px;
-                top: 8px;            
+                top: 0;            
             }
             &__roundel{
                 width:42px;
