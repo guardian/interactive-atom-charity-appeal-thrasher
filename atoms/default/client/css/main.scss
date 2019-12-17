@@ -10,7 +10,7 @@
 // Default breakpoints from Frontend
 $mq-breakpoints: (
     mobile:          320px,
-    mobileMedium:    360px,
+    mobileMedium:    375px,
     mobileLandscape: 480px,
     phablet:         660px,
     tablet:          740px,
@@ -99,7 +99,8 @@ section#charity-appeal {
         }
     }
     &__subheadline-bold {
-        font-weight:700;
+        font-family: "Guardian Text Egyptian Web",Georgia,serif;
+        font-weight:600;
     }
     &__tree {
         mix-blend-mode: darken;
@@ -254,7 +255,7 @@ section#charity-appeal {
     }
     img.tree-small {
         mix-blend-mode: darken;
-        visibility: visable;
+        visibility: visible;
         opacity:1;
         // transform: scaleX(-1);
         @include mq ($from: desktop) {
@@ -279,7 +280,7 @@ section#charity-appeal {
     }
     img.tree-mid {
         mix-blend-mode: darken;
-        visibility: visable;
+        visibility: visible;
         opacity:1;
     }
     img.tree-small {
@@ -291,7 +292,7 @@ section#charity-appeal {
 .step3 {
     img.tree-big {
         mix-blend-mode: darken;
-        visibility: visable;
+        visibility: visible;
         opacity:1;
     }
     img.tree-mid {
@@ -323,7 +324,7 @@ section#charity-appeal {
         }
         &__subheadline {
             margin-top:4px;
-            width:65%;
+            width:67%;
             font-size:15px;
         }
         &__tree {
@@ -331,6 +332,7 @@ section#charity-appeal {
             height: 160px;
             top: 40px;
         }
+
         &__component-button {
             margin-top:7px;
             span {
@@ -369,3 +371,59 @@ section#charity-appeal {
         }
     }
 }
+
+.step1 {
+    .android &,
+    .ios & {
+        img.tree-big {
+            visibility: visible;
+            opacity:1;
+        }
+        img.tree-mid {
+            visibility: hidden;
+            opacity:0;
+        }
+        img.tree-small {
+            visibility: hidden;
+            opacity:0;
+        }
+    }
+    
+}
+
+.step2 {
+    .android &,
+    .ios & {
+        img.tree-big {
+            visibility: visible;
+            opacity:1;
+        }
+        img.tree-mid {
+            visibility: hidden;
+            opacity:0;
+        }
+        img.tree-small {
+            visibility: hidden;
+            opacity:0;
+        }
+    }
+}
+
+.step3 {
+    .android &,
+    .ios & {
+        img.tree-big {
+            visibility: visible;
+            opacity:1;
+        }
+        img.tree-mid {
+            visibility: hidden;
+            opacity:0;
+        }
+        img.tree-small {
+            visibility: hidden;
+            opacity:0;
+        }
+    }
+}
+
