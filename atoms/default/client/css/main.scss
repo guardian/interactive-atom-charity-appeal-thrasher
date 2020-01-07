@@ -354,6 +354,7 @@ section#charity-appeal {
         &__component-button {
             margin-top:7px;
             span {
+                letter-spacing: unset;
                 font-weight:600;
             }
         }
@@ -385,6 +386,13 @@ section#charity-appeal {
         @include mq(desktop){
             &__gu-obs-logo{
                 visibility: hidden;
+            }
+        }
+        .ios & {
+            &__component-button {
+                span {
+                    letter-spacing: -0.5;
+                }
             }
         }
     }
